@@ -1,0 +1,12 @@
+name: Run on tag pushed
+
+on:
+  push:
+    tags: [ action-trigger ]
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo This workflow was triggered!
